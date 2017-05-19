@@ -13,7 +13,7 @@ cd ./files
 for file in $(find . -type f); do
   echo "~/$file"
   if [ -s ~/$file ]; then mv ~/$file ~/$file.bkp; fi
-  ln -s ~/$SCRIPT_PATH/files/$file ~/$file
+  ln -fs $SCRIPT_PATH/files/$file ~/$file
 done
 
 echo -e "${GRAY}"
