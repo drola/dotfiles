@@ -334,12 +334,13 @@ layers configuration.
 This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
+  (setq split-height-threshold nil)
+  (setq split-width-threshold nil)
+
   (require 'ng2-mode)
-  
   (require 'editorconfig)
   (editorconfig-mode 1)
-;;  (add-to-list 'editorconfig-indentation-alist
-;;               '(ng2-mode typescript-ident-level))
+
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
